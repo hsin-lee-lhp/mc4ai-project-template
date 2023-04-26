@@ -3,7 +3,6 @@
 | ----- | ------------- | ----------- |
 | Lee Hui Hsin | 10CL2 | hsinlee3115@gmail.com |
 | Phạm Quỳnh An  | 10CL2 |  |
-
 # Thông tin project
 ## Đề tài:
 ## Các thư viện sử dụng: `<p>numpy,...</p>`
