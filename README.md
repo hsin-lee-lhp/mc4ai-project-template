@@ -1,2 +1,2 @@
-# mc4ai-project-template
+# Danh sách thành viên
 Phạm Quỳnh An, Lee Hui Hsin
