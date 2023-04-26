@@ -1,2 +1,5 @@
 # Danh sách thành viên
-Phạm Quỳnh An, Lee Hui Hsin
+| Họ tên  | Lớp         | Email       |
+| ----- | ------------- | ----------- |
+| Lee Hui Hsin | 10CL2 | hsinlee3115@gmail.com |
+| Phạm Quỳnh An  | 10CL2 |  |
