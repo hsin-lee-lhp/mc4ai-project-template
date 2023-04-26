@@ -5,7 +5,7 @@
 | Phạm Quỳnh An  | 10CL2 |  |
 # Thông tin project
 ## Đề tài:
-## Các thư viện sử dụng: `<p>numpy,...</p>`
+## Các thư viện sử dụng: `numpy,...`
 ## Các chức năng chính & kế hoạch thực hiện
 | Chức năng  | Người thực hiện        | Ngày hoàn thành dự kiến      |
 | ----- | ------------- | ----------- |
