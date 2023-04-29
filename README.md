@@ -2,7 +2,7 @@
 | Họ tên  | Lớp         | Email       |
 | ----- | ------------- | ----------- |
 | Lee Hui Hsin | 10CL2 | hsinlee3115@gmail.com |
-| Phạm Quỳnh An  | 10CL2 |  |
+| Phạm Quỳnh An  | 10CL2 | taylor1389pham@gmail.com  |
 # Thông tin project
 ## Đề tài:
 ## Các thư viện sử dụng: ```numpy,...```
