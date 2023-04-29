@@ -10,4 +10,5 @@
 | Chức năng  | Người thực hiện        | Ngày hoàn thành dự kiến      |
 | ----- | ------------- | ----------- |
 | Danh sách học sinh |  Phạm Quỳnh An| 11/5 |
-|  |  |  |
+|  ----- | -------- | ------  |
+| Phân tích số lượng học sinh |  Lee Hui Hsin| 11/5 |
