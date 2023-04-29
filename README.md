@@ -9,6 +9,9 @@
 ## Các chức năng chính & kế hoạch thực hiện
 | Chức năng  | Người thực hiện        | Ngày hoàn thành dự kiến      |
 | ----- | ------------- | ----------- |
-| Danh sách học sinh |  Phạm Quỳnh An| 11/5 |
-|  ----- | -------- | ------  |
-| Phân tích số lượng học sinh |  Lee Hui Hsin| 11/5 |
+| Danh sách học sinh |  Phạm Quỳnh An | 11/5 |
+| Phân tích số lượng học sinh |  Lee Hui Hsin | 11/5 |
+| Phân tích điểm thi |  Phạm Quỳnh An | 11/5 |
+| Clustering |  Lee Hui Hsin| 11/5 |
+| Regression |  Phạm Quỳnh An | 11/5 |
+| Classify |  Lee Hui Hsin | 11/5 |
