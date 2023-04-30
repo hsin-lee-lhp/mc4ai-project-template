@@ -5,7 +5,7 @@
 | Phạm Quỳnh An  | 10CL2 | taylor1389pham@gmail.com  |
 # Thông tin project
 ## Đề tài: Phân tích bảng điểm học sinh
-## Các thư viện sử dụng: ```numpy, pandas, ```
+## Các thư viện sử dụng: ```numpy, pandas, matplotlib, scikit-learn, plotly ```
 ## Các chức năng chính & kế hoạch thực hiện
 | Chức năng  | Người thực hiện        | Ngày hoàn thành dự kiến      |
 | ----- | ------------- | ----------- |
