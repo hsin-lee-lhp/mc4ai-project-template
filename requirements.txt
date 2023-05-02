@@ -1,0 +1,5 @@
+plotly
+sci-kit learn
+matplotlib
+streamlit
+pandas
