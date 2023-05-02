@@ -1,5 +1,5 @@
 plotly
-sci-kit learn
+scikit-learn
 matplotlib
 streamlit
 pandas
