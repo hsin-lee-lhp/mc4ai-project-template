@@ -15,6 +15,4 @@ def histogram(df,x,y,color):
 def pie(df,x,title):
     fig = px.pie(df, names = x,title=title )
     st.plotly_chart(fig)
-def sang_chieu(df):
-    fig = px.histogram(df,x="GENDER",y="CLASS",color="PYTHON-CLASS")
-    st.plotly_chart(fig)
+
