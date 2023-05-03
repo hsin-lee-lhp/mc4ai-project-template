@@ -4,6 +4,7 @@ from dataframe import df
 from graph import *
 from tab0 import student_list
 from tab1 import score
+from phantichhs import *
 
 st.title('BẢNG ĐIỂM LỚP PY4AI 09/2022')
 
@@ -39,11 +40,6 @@ with tabs[1]:
     with tabs1[1]:
         score()
 
-    
-    
-    
-
-
 with tabs[2]:
     # temp_options = ('low','medium','high')
     # temp = st.select_slider('Temperature',options=temp_options)
@@ -51,7 +47,8 @@ with tabs[2]:
 
     number = st.slider('Số nhóm',min_value=1,max_value=5,step=1)
 
-
+with phantichhs:
+  sang_chieu(df)
 
 
 
