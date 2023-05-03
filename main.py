@@ -47,8 +47,7 @@ with tabs[2]:
 
     number = st.slider('Số nhóm',min_value=1,max_value=5,step=1)
 
-with phantichhs:
-  sang_chieu(df)
+
 
 
 
