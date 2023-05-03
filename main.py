@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from dataframe import df
-from graph import box, histogram,pie
+from graph import *
 from tab0 import student_list
 from tab1 import score
 
