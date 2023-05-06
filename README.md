@@ -12,6 +12,6 @@
 | Danh sách học sinh |  Phạm Quỳnh An | 11/5 |
 | Phân tích số lượng học sinh |  Lee Hui Hsin | 11/5 |
 | Phân tích điểm thi |  Phạm Quỳnh An | 11/5 |
-| Clustering |  Lee Hui Hsin| 11/5 |
-| Regression |  Phạm Quỳnh An | 11/5 |
+| Clustering |  Phạm Quỳnh An| 11/5 |
+| Regression |  Lee Hui Hsin | 11/5 |
 | Classify |  Lee Hui Hsin | 11/5 |
