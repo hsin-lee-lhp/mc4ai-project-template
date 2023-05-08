@@ -6,8 +6,19 @@ import streamlit as st
 _path='file/py4ai-score.csv'
 df = pd.read_csv(_path)
 df = pd.DataFrame(df)
-def in_df(_path):
-    print(pd.read_csv(_path))
+def xoa_null(df):
+    df['S1'].fillna(0, inplace=True)  
+    df['S2'].fillna(0, inplace=True)  
+    df['S3'].fillna(0, inplace=True)  
+    df['S4'].fillna(0, inplace=True)  
+    df['S5'].fillna(0, inplace=True)  
+    df['S6'].fillna(0, inplace=True)  
+    df['S7'].fillna(0, inplace=True)  
+    df['S8'].fillna(0, inplace=True)  
+    df['S9'].fillna(0, inplace=True)  
+    df['S10'].fillna(0, inplace=True)  
+    df['BONUS'].fillna(0, inplace=True)  
+    df['REG-MC4AI'].fillna('N', inplace=True)
 def nam_nu(df):
     nn=df["GENDER"]
     nam=[]
