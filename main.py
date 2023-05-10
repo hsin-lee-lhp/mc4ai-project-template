@@ -4,6 +4,7 @@ from dataframe import df
 from graph import *
 from tab0 import student_list
 from tab1 import score
+from pths.py import *
 
 st.title('BẢNG ĐIỂM LỚP PY4AI 09/2022')
 
@@ -38,6 +39,8 @@ with tabs[1]:
     tabs1 = st.tabs(tabs1_titles)
     with tabs1[1]:
         score()
+    with tabs1[0]:
+        bieu_do()
 
 with tabs[2]:
     # temp_options = ('low','medium','high')
