@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from dataframe import df
+from dataframe import *
 from graph import *
 from tab0 import student_list
 from tab1 import score
