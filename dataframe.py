@@ -76,4 +76,4 @@ class_mapping1 = {
         
     }
 
-df['GRADE'] = df['CLASS-GROUP'].map(class_mapping1)
+df['GRADE'] = df['CLASS'].map(class_mapping1)
