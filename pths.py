@@ -40,11 +40,11 @@ def dtf():
             '10CH2': 'Chuyên Hóa',
             '12CH1': 'Chuyên Hóa',
             '10CTRN': 'Chuyên Trung Nhật',
-            '10A1': 'Thường',
-            '10A2': 'Thường',
-            '10A3': 'Thường',
-            '11A': 'Thường',
-            '11B': 'Thường',
+            '10A1': 'Lớp thường',
+            '10A2': 'Lớp thường',
+            '10A3': 'Lớp thường',
+            '11A': 'Lớp thường',
+            '11B': 'Lớp thường',
 
         }
 
@@ -100,4 +100,4 @@ def bieu_do():
         st.write('Học sinh lớp chuyên có hứng thú với AI hơn')
     if a=='PHÂN BỐ HS CÁC KHỐI':
         pie(df, df["GRADE"],"PHÂN BỐ HS CÁC KHỐI")
-        st.write("Học sinh lớp chuyên hứng thú với AI hơn")
+        st.write("Học sinh lớp 10 hứng thú với AI hơn")
