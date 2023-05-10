@@ -40,6 +40,7 @@ with tabs[1]:
     with tabs1[1]:
         score()
     with tabs1[0]:
+        dtf()
         bieu_do()
 
 with tabs[2]:
