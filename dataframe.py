@@ -44,3 +44,36 @@ class_mapping = {
     }
 
 df['CLASS-GROUP'] = df['CLASS'].map(class_mapping)
+
+
+class_mapping1 = {
+        '10CT1': 'Lớp 10',
+        '10CT2': 'Lớp 10',
+        '11CT1': 'Lớp 11',
+        '11CT2': 'Lớp 11',
+        '11CT3': 'Lớp 11',
+        '10CTIN': 'Lớp 10',
+        '10CL1': 'Lớp 10',
+        '10CL2': 'Lớp 10',
+        '10CA1': 'Lớp 10',
+        '10CA2': 'Lớp 10',
+        '11CA3': 'Lớp 11',
+        '10CV1': 'Lớp 10',
+        '10CV2': 'Lớp 10',
+        '10CSD': 'Lớp 10',
+        '11CSD': 'Lớp 11',
+        '10TH1': 'Lớp 10',
+        '10TH2': 'Lớp 10',
+        '10SN': 'Lớp 10',
+        '10CH2': 'Lớp 10',
+        '12CH1': 'Lớp 12',
+        '10CTRN': 'Lớp 10',
+        '10A1': 'Lớp 10',
+        '10A2': 'Lớp 10',
+        '10A3': 'Lớp 10',
+        '11A': 'Lớp 11',
+        '11B': 'Lớp 11',
+        
+    }
+
+df['GRADE'] = df['CLASS-GROUP'].map(class_mapping1)
