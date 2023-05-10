@@ -4,7 +4,6 @@ from dataframe import df
 from graph import *
 from tab0 import student_list
 from tab1 import score
-from phantichhs import *
 
 st.title('BẢNG ĐIỂM LỚP PY4AI 09/2022')
 
