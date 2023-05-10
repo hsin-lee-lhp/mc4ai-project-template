@@ -2,7 +2,7 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from dataframe.py import *
+from dataframe import *
 df = pd.read_csv('py4ai-score.csv')
 
 ''' df['S1'].fillna(0, inplace=True)  
