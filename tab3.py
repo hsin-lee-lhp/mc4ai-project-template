@@ -1,9 +1,6 @@
 import pandas as pd
-import plotly.express as px
 import numpy as np
-import streamlit as st
 import plotly.graph_objects as go
-from dataframe import df
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Flatten, Input
 from tensorflow.random import set_seed
