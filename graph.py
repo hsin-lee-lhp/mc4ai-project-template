@@ -1,9 +1,9 @@
 import plotly.express as px
 import pandas as pd
 import streamlit as st
-from dataframe import df 
+from dataframe import *
 
-
+dtf()
 def box(df,x,y,color):
     fig = px.box(df, x= x, y = y,color=color)
     st.plotly_chart(fig)
