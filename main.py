@@ -5,7 +5,7 @@ from graph import pie,box,histogram
 from tab0 import student_list
 from tab1 import graph,score
 from tab2 import kmeans
-from tab3 import  regression,classify,data
+from tab3 import regression,classify,data
 
 st.title('BẢNG ĐIỂM LỚP PY4AI 09/2022')
 
