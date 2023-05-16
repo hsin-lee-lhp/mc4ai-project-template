@@ -46,10 +46,13 @@ def score():
 
     if s == 'GPA':
         box(df,'CLASS-GROUP','GPA',None)
-        histogram(df,'GPA',None,'PYTHON-CLASS')
+        st.success('Các lớp khối tự nhiên học tốt hơn lớp khối xã hội')
+        st.success('Lớp Chuyên Tin học giỏi nhất')
+        box(df,'PYTHON-CLASS','GPA',None)
+        st.success('Lớp 114 học tốt hơn lớp 115')
         histogram(df,'GPA',None,'GENDER')
+        st.success('Nam sinh học tốt hơn nữ sinh')
         pie(df[df['GPA'] >= 6],'CLASS-GROUP','Tỉ lệ đậu lớp MC')
-
 def graph():
     a_names = ('PHÂN BỐ HS NAM - NỮ','PHÂN BỐ HS LỚP SÁNG - CHIỀU','PHÂN BỐ HS CHUYÊN - THƯỜNG','PHÂN BỐ HS CÁC KHỐI')
     a = st.radio('Loại biểu đồ',a_names,horizontal=True)
