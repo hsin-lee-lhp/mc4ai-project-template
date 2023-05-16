@@ -1,7 +1,7 @@
 import streamlit as st
 from graph import box,histogram,pie
 from dataframe import *
-df = pd.read_csv('py4ai-score.csv')
+dtf()
 def score():                                
     s_names = ('S1','S2','S3','S4','S5','S6','S7','S8','S9','S10','GPA')
     s = st.radio('Điểm từng session',s_names,horizontal=True)
@@ -49,43 +49,8 @@ def score():
         histogram(df,'GPA',None,'PYTHON-CLASS')
         histogram(df,'GPA',None,'GENDER')
         pie(df[df['GPA'] >= 6],'CLASS-GROUP','Tỉ lệ đậu lớp MC')
-'''      
-def student():
-    class_mapping1 = {
-            '10CT1': 'Lớp 10',
-            '10CT2': 'Lớp 10',
-            '11CT1': 'Lớp 11',
-            '11CT2': 'Lớp 11',
-            '11CT3': 'Lớp 11',
-            '10CTIN': 'Lớp 10',
-            '10CL1': 'Lớp 10',
-            '10CL2': 'Lớp 10',
-            '10CA1': 'Lớp 10',
-            '10CA2': 'Lớp 10',
-            '11CA3': 'Lớp 11',
-            '10CV1': 'Lớp 10',
-            '10CV2': 'Lớp 10',
-            '10CSD': 'Lớp 10',
-            '11CSD': 'Lớp 11',
-            '10TH1': 'Lớp 10',
-            '10TH2': 'Lớp 10',
-            '10SN': 'Lớp 10',
-            '10CH2': 'Lớp 10',
-            '12CH1': 'Lớp 12',
-            '10CTRN': 'Lớp 10',
-            '10A1': 'Lớp 10',
-            '10A2': 'Lớp 10',
-            '10A3': 'Lớp 10',
-            '11A': 'Lớp 11',
-            '11B': 'Lớp 11',
-
-        }
-
-    df['GRADE'] = df['CLASS'].map(class_mapping1)
-'''
 
 def bieu_do():
-    dtf()
     a_names = ('PHÂN BỐ HS NAM - NỮ','PHÂN BỐ HS LỚP SÁNG - CHIỀU','PHÂN BỐ HS CHUYÊN - THƯỜNG','PHÂN BỐ HS CÁC KHỐI')
     a = st.radio('Loại biểu đồ',a_names,horizontal=True)
     if a=='PHÂN BỐ HS NAM - NỮ':
