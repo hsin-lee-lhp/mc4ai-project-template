@@ -5,7 +5,7 @@ from graph import *
 from tab0 import *
 from tab1 import *
 from tab2 import *
-from tab3 import *
+# from tab3 import *
 
 st.title('BẢNG ĐIỂM LỚP PY4AI 09/2022')
 
@@ -29,10 +29,12 @@ with tabs[1]:
 
 with tabs[2]:
     kmeans()
-with tabs[3]:
+'''
+    with tabs[3]:
     regression()
     classify()
     data()
+    '''
 
 
 
