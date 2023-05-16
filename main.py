@@ -32,6 +32,7 @@ with tabs[2]:
 with tabs[3]:
     regression()
     classify()
+    data()
 
 
 
