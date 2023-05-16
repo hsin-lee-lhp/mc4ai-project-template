@@ -1,7 +1,7 @@
 import plotly.express as px
 import pandas as pd
 import streamlit as st
-from dataframe import df 
+from dataframe import *
 
 
 def box(df,x,y,color):
