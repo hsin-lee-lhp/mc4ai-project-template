@@ -1,7 +1,7 @@
 import streamlit as st
 from graph import box,histogram,pie
 from dataframe import *
-dtf()
+
 def score():                                
     s_names = ('S1','S2','S3','S4','S5','S6','S7','S8','S9','S10','GPA')
     s = st.radio('Điểm từng session',s_names,horizontal=True)
