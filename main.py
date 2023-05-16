@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-from dataframe import *
-from graph import *
-from tab0 import *
-from tab1 import *
-from tab2 import *
+from dataframe import df
+from graph import pie,box,histogram
+from tab0 import student_list
+from tab1 import graph,score
+from tab2 import kmeans
 # from tab3 import *
 
 st.title('BẢNG ĐIỂM LỚP PY4AI 09/2022')
