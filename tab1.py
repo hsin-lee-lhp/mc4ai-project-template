@@ -64,4 +64,4 @@ def graph():
         st.write('Học sinh lớp chuyên có hứng thú với AI hơn')
     if a=='PHÂN BỐ HS CÁC KHỐI':
         pie(df, df["GRADE"],"PHÂN BỐ HS CÁC KHỐI")
-        st.write("Học sinh lớp 10 học AI nhiều hơn do lớp 11 và 12 bận ôn thi THPTQG")
+        st.write("Học sinh lớp 12 ít có số lượng đăng kí học AI ít nhất do bận ôn thi THPTQG")
