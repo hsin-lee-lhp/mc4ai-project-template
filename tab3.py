@@ -100,8 +100,3 @@ def data():
     fig.update_layout(title="Decision Boundary")
     st.plotly_chart(fig)
 
-
-
-fig = go.Figure(data=[scatter, surface])
-fig.update_layout(title="Decision Boundary")
-st.plotly_chart(fig)
