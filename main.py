@@ -23,7 +23,7 @@ with tabs[1]:
                     'Điểm')
     tabs1 = st.tabs(tabs1_titles)
     with tabs1[0]:
-        bieu_do()
+        graph()
     with tabs1[1]:
         score()
 
