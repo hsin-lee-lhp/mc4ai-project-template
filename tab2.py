@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
-from dataframe import df
+from dataframe import *
 from sklearn.cluster import KMeans
 
 def kmeans():
