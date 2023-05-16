@@ -2,9 +2,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
-from dataframe import *
+from dataframe import df
 from sklearn.cluster import KMeans
-df = pd.read_csv('py4ai-score.csv')
+
 def kmeans():
     df1 = df.iloc[:,4:16]
     n = st.slider('Số nhóm',min_value=2,max_value=5,step=1)
