@@ -48,7 +48,7 @@ def score():
         histogram(df,'GPA',None,'PYTHON-CLASS')
         histogram(df,'GPA',None,'GENDER')
         pie(df[df['GPA'] >= 6],'CLASS-GROUP','Tỉ lệ đậu lớp MC')
-      
+'''      
 def student():
     class_mapping1 = {
             '10CT1': 'Lớp 10',
@@ -81,11 +81,12 @@ def student():
         }
 
     df['GRADE'] = df['CLASS'].map(class_mapping1)
-
+'''
 def pie(df,x,title):
     fig = px.pie(df, names = x,title=title )
     st.plotly_chart(fig)
 def bieu_do():
+    dtf()
     a_names = ('PHÂN BỐ HS NAM - NỮ','PHÂN BỐ HS LỚP SÁNG - CHIỀU','PHÂN BỐ HS CHUYÊN - THƯỜNG','PHÂN BỐ HS CÁC KHỐI')
     a = st.radio('Loại biểu đồ',a_names,horizontal=True)
     if a=='PHÂN BỐ HS NAM - NỮ':
