@@ -1,5 +1,5 @@
 import streamlit as st
-from dataframe import df
+from dataframe import *
 
 def student_list():
     with st.container():
