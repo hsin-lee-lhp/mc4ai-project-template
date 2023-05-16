@@ -8,9 +8,9 @@ from tensorflow.keras.backend import clear_session
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from dataframe import *
+from dataframe import df
 import streamlit as st
-dtf()
+
 def regression():
     z = df["S10"].values
     y=df['S6'].values
@@ -21,7 +21,7 @@ def regression():
     y=y.reshape(-1,1)
     model.fit(X, y)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25)
-    model = LinearRegression() 
+    model = LinearRegression()
     model.fit(X_train, y_train)
 
     y_pred = model.predict(X_test)
@@ -35,9 +35,6 @@ def regression():
     fig = go.Figure(data=[go.Scatter3d(x=df['GPA'], y=df['S6'], z=df['S10'], mode='markers')])
     st.plotly_chart(fig)
 
-
-
-dtf()
 def classify():
   X = df[['S1','S6','S10']].values
   from sklearn.model_selection import train_test_split
