@@ -58,10 +58,10 @@ def graph():
         st.write('Nam hứng thú với AI hơn')
     if a=='PHÂN BỐ HS LỚP SÁNG - CHIỀU':
         pie(df, df["PYTHON-CLASS"],"PHÂN BỐ HS LỚP SÁNG CHIỀU")
-        st.write('Học sinh thường chọn học AI vào buổi sáng')
+        st.write('Học sinh lớp sáng chiều phân bố khá đồng đều')
     if a=='PHÂN BỐ HS CHUYÊN - THƯỜNG':
         pie(df, df["CLASS-GROUP"],"PHÂN BỐ HS CHUYÊN - THƯỜNG")
         st.write('Học sinh lớp chuyên có hứng thú với AI hơn')
     if a=='PHÂN BỐ HS CÁC KHỐI':
         pie(df, df["GRADE"],"PHÂN BỐ HS CÁC KHỐI")
-        st.write("Học sinh lớp chuyên hứng thú với AI hơn")
+        st.write("Học sinh lớp 10 học AI nhiều hơn do lớp 11 và 12 bận ôn thi THPTQG")
