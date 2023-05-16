@@ -83,9 +83,7 @@ def student():
 
     df['GRADE'] = df['CLASS'].map(class_mapping1)
 '''
-def pie(df,x,title):
-    fig = px.pie(df, names = x,title=title )
-    st.plotly_chart(fig)
+
 def bieu_do():
     dtf()
     a_names = ('PHÂN BỐ HS NAM - NỮ','PHÂN BỐ HS LỚP SÁNG - CHIỀU','PHÂN BỐ HS CHUYÊN - THƯỜNG','PHÂN BỐ HS CÁC KHỐI')
