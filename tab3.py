@@ -10,8 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from dataframe import *
 import streamlit as st
-
-
+df = pd.read_csv('py4ai-score.csv')
 def regression():
     z = df["S10"].values
     y=df['S6'].values
