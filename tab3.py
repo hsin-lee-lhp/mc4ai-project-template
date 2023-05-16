@@ -101,13 +101,6 @@ def data():
     st.plotly_chart(fig)
 
 
-surface = go.Contour(x=xrange,
-                  y=yrange,
-                  z=np.argmax(y_pred, axis=1).reshape(500, 500),
-                  #  colorscale=colorscale,
-                  showscale=False,
-                  opacity=0.5
-)
 
 fig = go.Figure(data=[scatter, surface])
 fig.update_layout(title="Decision Boundary")
