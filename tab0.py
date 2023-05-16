@@ -1,6 +1,6 @@
 import streamlit as st
 from dataframe import *
-
+df = pd.read_csv('py4ai-score.csv')
 def student_list():
     with st.container():
         col1,col2,col3,col4,col5 = st.columns(5)
