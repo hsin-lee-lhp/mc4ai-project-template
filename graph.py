@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 from dataframe import *
 
-
+df = pd.read_csv('py4ai-score.csv')
 def box(df,x,y,color):
     fig = px.box(df, x= x, y = y,color=color)
     st.plotly_chart(fig)
