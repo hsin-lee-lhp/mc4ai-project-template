@@ -11,7 +11,7 @@ from tensorflow.keras.utils import to_categorical
 from dataframe import df
 import streamlit as st
 
-def regression():
+def create_dataset():
     '''z = df["S10"].values
     y=df['S6'].values
     x=df['S1'].values
@@ -37,7 +37,7 @@ def regression():
 
     X = np.concatenate((x_1.reshape(-1,1), x_2.reshape(-1,1)), axis=1)
     return X, y
-
+def regression():
     X, y = create_dataset()
     X.shape, y.shape
     
