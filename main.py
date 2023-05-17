@@ -35,7 +35,7 @@ with tabs[3]:
     if dt=="3":
       regression()
 #     create_data()
-    elif dt=="2:
+    elif dt=="2":
       data()
     
     
