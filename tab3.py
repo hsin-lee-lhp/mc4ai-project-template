@@ -12,10 +12,19 @@ from dataframe import df
 import streamlit as st
 
 def regression():
-    scatter= go.Scatter3d(x=df['S1'], y=df['S6'], z=df['S10'], mode='markers')
-    fig = go.Figure(data=[scatter])
+    X=df['S6'].values
+    y=df['S10'].values
+    model = LinearRegression()
+    model.fit(X, y)
+    x = np.linspace(0, 100, 100)
+    y = np.linspace(0, 50, 100)
+    xx, yy = np.meshgrid(x, y)
+    xy = np.c_[xx.ravel(), yy.ravel()] # flatten & stack 
+    z = model.predict(xy)
+    z = z.reshape(xx.shape)
+    fig = go.Figure(data=[go.Surface(x=x, y=y, z=z)])
     st.plotly_chart(fig)
-
+    st.write(model.score(X, y))
 
 def create_data():
     X = df[['S1','S6','S10']].values
