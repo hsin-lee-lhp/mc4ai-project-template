@@ -6,8 +6,8 @@ from tensorflow.keras.layers import Dense, Activation, Flatten, Input
 from tensorflow.random import set_seed
 from tensorflow.keras.backend import clear_session
 from sklearn.model_selection import train_test_split
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+from tensorflow.keras.utils import to_categorical
 from dataframe import df
 import streamlit as st
 
@@ -50,13 +50,12 @@ def create_data():
 
     X = np.concatenate((X0, X1, X2), axis = 0)
     y = np.concatenate((y0, y1, y2), axis = 0)
+    return X,y
 
 def data():
     X, y = create_data()
     X.shape, y.shape
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-    from tensorflow.keras.utils import to_categorical
 
     y_train_ohe = to_categorical(y_train, num_classes=3)
     y_test_ohe = to_categorical(y_test, num_classes=3)
