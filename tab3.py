@@ -12,7 +12,7 @@ from dataframe import df
 import streamlit as st
 
 def regression():
-    z = df["S10"].values
+    '''z = df["S10"].values
     y=df['S6'].values
     x=df['S1'].values
     model = LinearRegression()
@@ -21,16 +21,32 @@ def regression():
     model.fit(X, y)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25)
     model = LinearRegression()
-    model.fit(X_train, y_train)
+    model.fit(X_train, y_train)'''
+    
+    x_1 = df['S6']
+    x_2 = df['S10']
+    y = []
+    for i,j in zip(x_1, x_2):
+    if i >= 0.5 and j >= 0.5:
+      y.append(1)
+    elif i + j >= 1.2:
+      y.append(1)
+    else:
+      y.append(0)
+    y = np.array(y)
+
+    X = np.concatenate((x_1.reshape(-1,1), x_2.reshape(-1,1)), axis=1)
+    return X, y
+
+    X, y = create_dataset()
+    X.shape, y.shape
     
     x = np.linspace(-4, 4, 100)
     y = np.linspace(-4, 4, 100)
 
     xx, yy = np.meshgrid(x, y)
-    xy = np.c_[xx.ravel(), yy.ravel()] # flatten & stack 
+    xy = np.c_[xx.ravel(), yy.ravel()] 
     z = model.predict_proba(xy)[:,1]
-
-
     z = z.reshape(xx.shape)
 
     fig = go.Figure(data=[go.Surface(x=x, y=y, z=z)])
