@@ -5,7 +5,7 @@ from graph import pie,box,histogram
 from tab0 import student_list
 from tab1 import graph,score
 from tab2 import kmeans
-from tab3 import regression, create_data, data
+from tab3 import dt
 
 st.title('BẢNG ĐIỂM LỚP PY4AI 09/2022')
 
@@ -30,13 +30,8 @@ with tabs[1]:
 with tabs[2]:
     kmeans()
 with tabs[3]:
-    dt=("2","3")
-    st.radio('Số đặc trưng',dt,horizontal=True)
-    if dt=="2":
-      create_data()
-      data()
-    if dt=="3":
-      regression()
+    dt()
+    
     
    
 
