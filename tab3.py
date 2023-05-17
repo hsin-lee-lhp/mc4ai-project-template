@@ -93,5 +93,5 @@ def data():
     fig = go.Figure(data=[scatter, surface])
     fig.update_layout(title="Decision Boundary")
     st.plotly_chart(fig)
-    st.write(model.score(X,y))
+    st.write(model.score(x,y))
 
