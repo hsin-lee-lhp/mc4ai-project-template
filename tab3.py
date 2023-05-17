@@ -12,10 +12,11 @@ from dataframe import df
 import streamlit as st
 
 def regression():
-    x=df['S6'].values
+    X=df['S6'].values
     y=df['S10'].values
+    X.shape, y.shape
     model = LinearRegression()
-    model.fit(x, y)
+    model.fit(X, y)
     x = np.linspace(0, 100, 100)
     y = np.linspace(0, 50, 100)
     xx, yy = np.meshgrid(x, y)
@@ -24,7 +25,7 @@ def regression():
     z = z.reshape(xx.shape)
     fig = go.Figure(data=[go.Surface(x=x, y=y, z=z)])
     st.plotly_chart(fig)
-    st.write(model.score(x, y))
+    st.write(model.score(X, y))
 
 def create_data():
     X = df[['S1','S6','S10']].values
