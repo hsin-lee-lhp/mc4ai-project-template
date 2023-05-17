@@ -12,19 +12,22 @@ from dataframe import df
 import streamlit as st
 
 def regression():
-    X=df['S6'].values
-    y=df['S10'].values
-    X.shape, y.shape
+    z = df["S10"].values
+    y=df['S6'].values
+    x=df['S1'].values
+    from sklearn.linear_model import LinearRegression
     model = LinearRegression()
+    X = x.reshape(-1,1)
+    y=y.reshape(-1,1)
     model.fit(X, y)
-    x = np.linspace(0, 100, 100)
-    y = np.linspace(0, 50, 100)
-    xx, yy = np.meshgrid(x, y)
-    xy = np.c_[xx.ravel(), yy.ravel()] # flatten & stack 
-    z = model.predict(xy)
-    z = z.reshape(xx.shape)
-    fig = go.Figure(data=[go.Surface(x=x, y=y, z=z)])
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25)
+    model = LinearRegression()
+    model.fit(X_train, y_train)
+    
+    scatter= go.Scatter3d(x=df['S1'], y=df['S6'], z=df['S10'], mode='markers')
+    fig = go.Figure(data=[scatter])
     st.plotly_chart(fig)
+
     st.write(model.score(X, y))
 
 def create_data():
