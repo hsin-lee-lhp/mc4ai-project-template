@@ -30,7 +30,7 @@ with tabs[1]:
 with tabs[2]:
     kmeans()
 with tabs[3]:
-#     regression()
+    regression()
     create_data()
     data()
    
