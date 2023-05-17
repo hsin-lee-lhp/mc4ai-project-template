@@ -30,9 +30,13 @@ with tabs[1]:
 with tabs[2]:
     kmeans()
 with tabs[3]:
-    regression()
+    dt=("2", "3")
+    st.radio('Số đặc trưng',dt,horizontal=True)
+    if dt=="3":
+      regression()
 #     create_data()
-    data()
+    if dt=="2":
+      data()
     
     
    
