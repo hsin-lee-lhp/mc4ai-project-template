@@ -64,7 +64,7 @@ def data():
     model = Sequential()
     model.add(Input(shape=X_train.shape[1:]))
     model.add(Flatten())
-    model.add(Dense(3, activation='softmax'))
+    model.add(Dense(2, activation='softmax'))
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics='accuracy')
     model.summary()
     history = model.fit(X_train, y_train_ohe, epochs = 10, verbose=1)
@@ -93,5 +93,5 @@ def data():
     fig = go.Figure(data=[scatter, surface])
     fig.update_layout(title="Decision Boundary")
     st.plotly_chart(fig)
-    st.write(model.score(X_test,y_test))
+    st.write(model.score(X,y))
 
