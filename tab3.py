@@ -49,7 +49,7 @@ def create_data():
     return X,y
 
 def data():
-    st.radio('Số đặc trưng',"2",horizontal=True)
+#     st.radio('Số đặc trưng',"2",horizontal=True)
     X, y = create_data()
     X.shape, y.shape
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
