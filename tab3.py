@@ -84,7 +84,7 @@ def data():
 
     surface = go.Contour(x=xrange,
                       y=yrange,
-                      z=np.argmax(y_pred, axis=1).reshape(500, 500),
+#                       z=np.argmax(y_pred, axis=1).reshape(500, 500),
                       #  colorscale=colorscale,
                       showscale=False,
                       opacity=0.5
