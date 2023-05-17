@@ -26,8 +26,8 @@ def regression():
     
     scatter= go.Scatter3d(x=df['S1'], y=df['S6'], z=df['S10'], mode='markers')
     fig = go.Figure(data=[scatter])
-    st.plotly_chart(fig)
-
+    n= st.plotly_chart(fig)
+    return n
 
 def create_data():
     X = df[['S6','S10']].values
@@ -91,13 +91,14 @@ def data():
 
     fig = go.Figure(data=[scatter, surface])
     fig.update_layout(title="Decision Boundary")
-    st.plotly_chart(fig)
+    p= st.plotly_chart(fig)
+    return p
 
 def dt():
-    dt=("2","3")
+    dt1=("2","3")
     st.radio('Số đặc trưng',dt,horizontal=False)
-    if dt=="2":
+    if dt1=="2":
       create_data()
       data()
-    if dt=="3":
+    if dt1=="3":
       regression()
