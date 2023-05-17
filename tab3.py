@@ -25,7 +25,7 @@ def regression():
     model.fit(X_train, y_train)
 
     y_pred = model.predict(X_test)
-    plt.scatter(X_test, y_test, color ='r')
+    plt.scatter(X_test, y_test, color ='k')
     plt.plot(X_test, y_pred, color ='b')
     plt.xlabel('S10')
     plt.ylabel('S6')
