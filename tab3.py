@@ -95,7 +95,7 @@ def data():
 
 def dt():
     dt=("2","3")
-    st.radio('Số đặc trưng',dt,horizontal=True)
+    st.radio('Số đặc trưng',dt,horizontal=False)
     if dt=="2":
       create_data()
       data()
