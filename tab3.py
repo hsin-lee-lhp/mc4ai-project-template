@@ -12,6 +12,7 @@ from dataframe import df
 import streamlit as st
 
 def regression():
+    st.radio('Số đặc trưng',"3",horizontal=True)
     z = df["S10"].values
     y=df['S6'].values
     x=df['S1'].values
@@ -48,6 +49,7 @@ def create_data():
     return X,y
 
 def data():
+    st.radio('Số đặc trưng',"2",horizontal=True)
     X, y = create_data()
     X.shape, y.shape
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
@@ -94,11 +96,3 @@ def data():
     st.plotly_chart(fig)
 
 
-def dt():
-    dt1=("2","3")
-    st.radio('Số đặc trưng',dt,horizontal=False)
-    if dt1=="2":
-      create_data()
-      data()
-    if dt1=="3":
-      regression()
