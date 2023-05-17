@@ -32,11 +32,11 @@ with tabs[2]:
 with tabs[3]:
     dt=("2", "3")
     st.radio('Số đặc trưng',dt,horizontal=True)
-    if dt=="3":
-      regression()
-#     create_data()
-    elif dt=="2":
+    if dt=="2":
       data()
+#     create_data()
+    else:
+      regression()
     
     
    
