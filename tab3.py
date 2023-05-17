@@ -79,13 +79,13 @@ def data():
     y_pred = model.predict(np.c_[xx.ravel(), yy.ravel()])
 
     scatter = go.Scatter(x=X_train[:,0], y=X_train[:, 1], mode='markers',
-                      marker=dict(size=7,color=y_train,# colorscale=colorscale,
+                      marker=dict(size=7,color=y_train,colorscale=colorscale,
                       ))
 
     surface = go.Contour(x=xrange,
                       y=yrange,
 #                       z=np.argmax(y_pred, axis=1).reshape(500, 500),
-                      #  colorscale=colorscale,
+                      colorscale=colorscale,
                       showscale=False,
                       opacity=0.5
     )
