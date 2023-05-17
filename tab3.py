@@ -35,7 +35,7 @@ def regression():
     fig = go.Figure(data=[go.Scatter3d(x=df['GPA'], y=df['S6'], z=df['S10'], mode='markers')])
     st.plotly_chart(fig)
 
-def classify():
+def create_data():
     X = df[['S1','S6','S10']].values
     from sklearn.model_selection import train_test_split
 
