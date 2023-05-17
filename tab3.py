@@ -12,41 +12,10 @@ from dataframe import df
 import streamlit as st
 
 def regression():
-    '''z = df["S10"].values
-    y=df['S6'].values
-    x=df['S1'].values
-    model = LinearRegression()
-    X = x.reshape(-1,1)
-    y=y.reshape(-1,1)
-    model.fit(X, y)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25)
-    model = LinearRegression()
-    model.fit(X_train, y_train)'''
-    
-    x_1 = df['S6']
-    x_2 = df['S10']
-    y = []
-    for i,j in zip(x_1, x_2):
-    if i >= 0.5 and j >= 0.5:
-      y.append(1)
-    elif i + j >= 1.2:
-      y.append(1)
-    else:
-      y.append(0)
-    y = np.array(y)
-
-    X = np.concatenate((x_1.reshape(-1,1), x_2.reshape(-1,1)), axis=1)
-
-    x = np.linspace(-4, 4, 100)
-    y = np.linspace(-4, 4, 100)
-
-    xx, yy = np.meshgrid(x, y)
-    xy = np.c_[xx.ravel(), yy.ravel()] 
-    z = model.predict_proba(xy)[:,1]
-    z = z.reshape(xx.shape)
-
-    fig = go.Figure(data=[go.Surface(x=x, y=y, z=z)])
+    scatter= go.Scatter3d(x=df['S1'], y=df['S6'], z=df['S10'], mode='markers')
+    fig = go.Figure(data=[scatter])
     st.plotly_chart(fig)
+
 
 def create_data():
     X = df[['S1','S6','S10']].values
