@@ -15,5 +15,5 @@
 | Clustering |  Phạm Quỳnh An| 11/5 |
 | Regression |  Lee Hui Hsin | 11/5 |
 | Classify |  Lee Hui Hsin | 11/5 |
-Video:
-Streamlit: 
+Video: https://drive.google.com/file/d/1ncdGbnElBZRU9s5C_eqcaLtY6bdYs2oP/view?usp=share_link
+Streamlit: https://hsin-lee-lhp-mc4ai-project-template-main-193w8f.streamlit.app/
