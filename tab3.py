@@ -14,7 +14,7 @@ import streamlit as st
 def regression():
     z = df["S10"].values
     y=df['S6'].values
-    x=df['GPA'].values
+    x=df['S1'].values
     from sklearn.linear_model import LinearRegression
     model = LinearRegression()
     X = x.reshape(-1,1)
@@ -25,14 +25,14 @@ def regression():
     model.fit(X_train, y_train)
 
     y_pred = model.predict(X_test)
-    plt.scatter(X_test, y_test, color ='k')
+    plt.scatter(X_test, y_test, color ='r')
     plt.plot(X_test, y_pred, color ='b')
-    plt.xlabel('S10')
+    plt.xlabel('S1')
     plt.ylabel('S6')
     plt.show()
 
 
-    fig = go.Figure(data=[go.Scatter3d(x=df['GPA'], y=df['S6'], z=df['S10'], mode='markers')])
+    fig = go.Figure(data=[go.Scatter3d(x=df['S1'], y=df['S6'], z=df['S10'], mode='markers')])
     st.plotly_chart(fig)
 
 def create_data():
