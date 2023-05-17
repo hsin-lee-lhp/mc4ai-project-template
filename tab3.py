@@ -12,7 +12,7 @@ from dataframe import df
 import streamlit as st
 
 def regression():
-    st.radio('Số đặc trưng',"3",horizontal=True)
+#     st.radio('Số đặc trưng',"3",horizontal=True)
     z = df["S10"].values
     y=df['S6'].values
     x=df['S1'].values
