@@ -22,15 +22,7 @@ def regression():
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25)
     model = LinearRegression()
     model.fit(X_train, y_train)
-
-   ''' y_pred = model.predict(X_test)
-    plt.scatter(X_test, y_test, color ='r')
-    plt.plot(X_test, y_pred, color ='b')
-    plt.xlabel('S1')
-    plt.ylabel('S6')
-    plt.show()'''
-
-
+    
     fig = go.Figure(data=[go.Scatter3d(x=df['S1'], y=df['S6'], z=df['S10'], mode='markers')])
     st.plotly_chart(fig)
 
