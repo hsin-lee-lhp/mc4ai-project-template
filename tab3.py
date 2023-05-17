@@ -28,7 +28,6 @@ def regression():
     fig = go.Figure(data=[scatter])
     st.plotly_chart(fig)
 
-    st.write(model.score(X, y))
 
 def create_data():
     X = df[['S6','S10']].values
