@@ -15,7 +15,6 @@ def regression():
     z = df["S10"].values
     y=df['S6'].values
     x=df['S1'].values
-    from sklearn.linear_model import LinearRegression
     model = LinearRegression()
     X = x.reshape(-1,1)
     y=y.reshape(-1,1)
