@@ -31,7 +31,7 @@ def regression():
     st.write(model.score(X, y))
 
 def create_data():
-    X = df[['S1','S6','S10']].values
+    X = df[['S6','S10']].values
     from sklearn.model_selection import train_test_split
 
     means = [[2, 2], [8, 3], [3, 6]]
@@ -39,13 +39,13 @@ def create_data():
     N = 300
     X0 = np.random.multivariate_normal(means[0], cov, N)
     X1 = np.random.multivariate_normal(means[1], cov, N)
-    X2 = np.random.multivariate_normal(means[2], cov, N)
+#     X2 = np.random.multivariate_normal(means[2], cov, N)
     y0 = np.zeros(N)
     y1 = np.ones(N)
-    y2 = np.ones(N)*2
+#     y2 = np.ones(N)*2
 
-    X = np.concatenate((X0, X1, X2), axis = 0)
-    y = np.concatenate((y0, y1, y2), axis = 0)
+    X = np.concatenate((X0, X1), axis = 0)
+    y = np.concatenate((y0, y1), axis = 0)
     return X,y
 
 def data():
