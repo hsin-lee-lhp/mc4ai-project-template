@@ -23,7 +23,17 @@ def regression():
     model = LinearRegression()
     model.fit(X_train, y_train)
     
-    fig = go.Figure(data=[go.Scatter3d(x=df['S1'], y=df['S6'], z=df['S10'], mode='markers')])
+    x = np.linspace(-4, 4, 100)
+    y = np.linspace(-4, 4, 100)
+
+    xx, yy = np.meshgrid(x, y)
+    xy = np.c_[xx.ravel(), yy.ravel()] # flatten & stack 
+    z = model.predict_proba(xy)[:,1]
+
+
+    z = z.reshape(xx.shape)
+
+    fig = go.Figure(data=[go.Surface(x=x, y=y, z=z)])
     st.plotly_chart(fig)
 
 def create_data():
