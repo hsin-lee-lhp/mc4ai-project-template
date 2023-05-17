@@ -53,8 +53,8 @@ def data():
     X.shape, y.shape
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-    y_train_ohe = to_categorical(y_train, num_classes=3)
-    y_test_ohe = to_categorical(y_test, num_classes=3)
+    y_train_ohe = to_categorical(y_train, num_classes=2)
+    y_test_ohe = to_categorical(y_test, num_classes=2)
 
     y_train.shape, y_train_ohe.shape
 
