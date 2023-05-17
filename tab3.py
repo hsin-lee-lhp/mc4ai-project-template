@@ -93,4 +93,11 @@ def data():
     fig.update_layout(title="Decision Boundary")
     st.plotly_chart(fig)
 
-
+def dt():
+    dt=("2","3")
+    st.radio('Số đặc trưng',dt,horizontal=True)
+    if dt=="2":
+      create_data()
+      data()
+    if dt=="3":
+      regression()
